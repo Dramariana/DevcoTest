@@ -1,10 +1,12 @@
 package net.onlinenotepad.stepdefinitions;
 
+import io.cucumber.core.internal.com.fasterxml.jackson.datatype.jdk8.WrappedIOException;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.onlinenotepad.task.GoTo;
+import net.onlinenotepad.task.WriteNote;
 import net.onlinenotepad.userinterfaces.OnlinenotepadHomePage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
@@ -44,6 +46,7 @@ public class stepDefs {
 
     @Then("user can write a note in bold type")
     public void userCanWriteANoteInBoldType() {
+        user.attemptsTo(WriteNote.boltType());
     }
 
 

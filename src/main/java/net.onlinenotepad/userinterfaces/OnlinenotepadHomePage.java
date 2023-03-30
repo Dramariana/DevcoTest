@@ -16,7 +16,7 @@ public class OnlinenotepadHomePage extends PageObject {
 
     public static final Target NOTE_NAME = Target.the("noteName").located(By.id("noteName"));
 
-    public static final Target SAVE_BUTTON = Target.the("btnsave").located(By.className("btn save-file-btn saveNotesBtn richtextnoteBtn"));
+    //public static final Target SAVE_BUTTON = Target.the("btnsave").located(By.className("btn save-file-btn saveNotesBtn richtextnoteBtn"));
 
     public static final Target SIDE_BAR = Target.the("side-bar").located(By.className("side-bar"));
 
